@@ -1,0 +1,268 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav-link{
+    color: #fff !important;
+}
+
+.navbar-brand {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url(../images/Pizzeria\ Logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fff;
+}
+
+.carousel-inner .carousel-item img {
+    height: 88vh !important;
+}
+
+.carousel-item .container {
+    min-width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+
+.carousel-caption h1 {
+    font-size: 50px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.carousel-caption p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.dropdown-menu {
+    position: fixed;
+    top: 20px;
+    background-color: #000 !important;
+    z-index: 1000;
+}
+
+.toppings {
+    font-size: 18px;
+}
+
+.add_product .container .row a {
+    position: absolute;
+    right: 20px;
+}
+
+#product__table {
+    width: 100%;
+}
+
+
+.side__bar {
+    top: 73px;
+    right: 0
+}
+
+hr {
+    padding-top: 2px;
+    margin-top: 100px;
+}
+
+.news__bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.news__bg .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 0;
+    left: 0;
+}
+
+.news__bg .overlay:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.right_cover_animate {
+    width: 25%;
+    height: 50vh;
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+    background-image: url(../images/gif/disappointment.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: fill;
+    z-index: 100;
+}
+
+.left_cover_animate {
+    width: 25%;
+    height: 50vh;
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    background-image: url(../images/gif/disappointment_look.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: fill;
+    z-index: 100;
+}
+
+.text-top {
+    margin-top: -30px;
+}
+
+.bg__order {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/gallery19.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg__order__card {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.address {
+    display: none;
+}
+
+.alert {
+    margin-bottom: 0;
+}
+
+/*=========================Toggle Order Menu Buttons==========================*/
+.toggleExtras {
+    display: none;
+}
+
+.CollapseFizzyDrinks {
+    display: none;
+}
+
+.CollapseJuiceDrinks {
+    display: none;
+}
+
+.CollapseWineDrinks {
+    display: none;
+}
+/*=========================End Toggle Order Menu Buttons==========================*/
+
+/*=====================================Footer================================*/
+#footer {
+    position: relative;
+    z-index: 700;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#footer a:hover {
+    color: rgb(218, 60, 92);
+    transition: all 300ms ease-in-out;
+}
+
+#footer .fab, #footer .fas {
+    font-size: 24px;
+}
+
+#footer .fab:hover, #footer .fas:hover {
+    transform: rotate(180deg);
+}
+/*===================================End Footer================================*/
+
+
+/*========================Media Queries for screen less than 768=======================*/
+@media (max-width: 767.98px) {
+    .carousel-caption h1 {
+        font-size: 26px !important;
+        font-weight: 600;
+        padding-bottom: 20px !important;
+    }
+
+    .carousel-caption p {
+        font-size: 15px !important;
+        font-weight: 600;
+    }
+    .btn-lg {
+        font-size: 18px !important;
+        margin-top: 15px !important;
+    }
+    .border-box {
+        font-weight: normal !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        margin-top: 15px;
+    }
+}
+
+
+/*========================Media Queries for screen less than 992=======================*/
+@media (max-width: 991.98px) {
+    .carousel-caption h1 {
+        font-size: 35px;
+        font-weight: 700;
+        padding-bottom: 15px !important;
+    }
+
+    .carousel-caption p {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .btn-lg {
+        font-size: 18px !important;
+        margin-top: 15px;
+    }
+    .border-box {
+        font-weight: normal !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        margin-top: 15px;
+    }
+    .chefs h3 {
+        font-size: 14px !important;
+    }
+}
+
+
+/*@media (max-width: 1199.98px) { ... }
+
+@media (max-width: 1399.98px) { ... }*/
